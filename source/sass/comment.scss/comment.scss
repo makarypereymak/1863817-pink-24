@@ -1,0 +1,33 @@
+.comment__name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.comment__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #283645;
+}
+
+.comment__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.comment__likes {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.comment {
+  background-color: #f2f2f2;
+}
