@@ -1,8 +1,11 @@
 @import "global/page.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/visually-hidden.scss";
 @import "page-header/page-header.scss";
 @import "navigation/navigation.scss";
 @import "advantages/advantages.scss";
-@import "comment.scss/comment.scss";
+@import "comment/comment.scss";
 @import "contacts/contacts.scss";
 @import "copyright/copyright.scss";
 @import "download-app/download-app.scss";
@@ -19,6 +22,7 @@
 @import "photo/photo.scss";
 @import "reviews/reviews.scss";
 @import "tariff/tariff.scss";
+@import "tariff/filter.scss";
 @import "social/social.scss";
 @import "effect/effect.scss";
 

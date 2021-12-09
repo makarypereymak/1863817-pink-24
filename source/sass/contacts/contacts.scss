@@ -1,14 +1,15 @@
 .contacts__text {
   font-weight: bold;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 13px;
   color: #283645;
+  margin-bottom: 13px;
 }
 
 .contacts__link {
   font-weight: 300;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 18px;
   text-decoration: none;
   color: #d22856;
 }
@@ -17,4 +18,23 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__item.phone {
+  margin-bottom: 31px;
+}
+
+.contacts__item.email {
+  margin-bottom: 35px;
+}
+
+.contacts__item.address .contacts__link {
+  width: 213px;
+  line-height: 33px;
 }

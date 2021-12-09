@@ -1,8 +1,13 @@
 .main-catalog__title {
+  position: relative;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: #ffffff;
+  margin: 0;
+  height: 171px;
+  padding: 36px 74px 0 74px;
+  box-sizing: border-box;
 }
 
 .main-catalog__text {
@@ -10,4 +15,24 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.main-catalog__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  height: 237px;
+  min-width: 320px;
+  top: -66px;
+  left: 0;
+  z-index: -1;
+}
+
+.main-catalog__text--after-photo-list {
+  padding-top: 49px;
+  padding-bottom: 52px;
 }

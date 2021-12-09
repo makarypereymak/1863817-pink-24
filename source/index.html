@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -57,17 +58,23 @@
           <ul class="download-app__list">
             <li class="download-app__item">
               <a class="download-app__link" href="#">
-                App Store
+                <span class="visually-hidden">
+                  App Store
+                </span>
               </a>
             </li>
             <li class="download-app__item">
               <a class="download-app__link" href="#">
-                Play Market
+                <span class="visually-hidden">
+                  Play Market
+                </span>
               </a>
             </li>
             <li class="download-app__item">
               <a class="download-app__link" href="#">
-                Windows
+                <span class="visually-hidden">
+                  Windows
+                </span>
               </a>
             </li>
           </ul>
@@ -153,13 +160,13 @@
             </div>
             <ul class="reviews__toggles-list slider__toggles">
               <li class="reviews__toggles-item">
-                <button class="slider__toggle slider__toggle--current" type="button">1</button>
+                <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">1</span></button>
               </li>
               <li class="reviews__toggles-item">
-                <button class="slider__toggle" type="button">2</button>
+                <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
               </li>
               <li class="reviews__toggles-item">
-                <button class="slider__toggle" type="button">3</button>
+                <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
               </li>
             </ul>
           </div>
@@ -169,44 +176,38 @@
         <table class="tariff__table">
           <tr class="tariff__item tariff__item--name">
             <td></td>
-            <td>База</td>
-            <td>СТАНДАРТ</td>
-            <td>АНЛИМ</td>
-          </tr>
-          <tr class="tariff__item tariff__item--price">
-            <td></td>
-            <td>1,99 USD</td>
-            <td>3,99 USD</td>
-            <td>9,99 USD</td>
+            <td>База <span class="tariff__price">1,99 usd</span></td>
+            <td>Стандарт <span class="tariff__price">3,99 usd</span></td>
+            <td>Анлим <span class="tariff__price">9,99 usd</span></td>
           </tr>
           <tr class="tariff__item tariff__item--filter">
-            <td>Розовый фильтр</td>
-            <td class="filter filter-yes"></td>
-            <td class="filter filter-yes"></td>
-            <td class="filter filter-yes"></td>
+            <td class="filter">Розовый фильтр</td>
+            <td class="filter filter-yes">Розовый фильтр</td>
+            <td class="filter filter-yes">Розовый фильтр</td>
+            <td class="filter filter-yes">Розовый фильтр</td>
           </tr>
           <tr class="tariff__item tariff__item--filter">
-            <td>Смайлики</td>
-            <td class="filter filter-no"></td>
-            <td class="filter filter-yes"></td>
-            <td class="filter filter-yes"></td>
+            <td class="filter">Смайлики</td>
+            <td class="filter filter-no">Смайлики</td>
+            <td class="filter filter-yes">Смайлики</td>
+            <td class="filter filter-yes">Смайлики</td>
           </tr>
           <tr class="tariff__item tariff__item--filter">
-            <td>Комментарии</td>
-            <td class="filter filter-no"></td>
-            <td class="filter filter-no"></td>
-            <td class="filter filter-yes"></td>
+            <td class="filter">Комментарии</td>
+            <td class="filter filter-no">Комментарии</td>
+            <td class="filter filter-no">Комментарии</td>
+            <td class="filter filter-yes">Комментарии</td>
           </tr>
         </table>
         <ul class="tariff__toggles-list slider__toggles">
           <li class="reviews__toggles-item">
-            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
           </li>
           <li class="reviews__toggles-item">
-            <button class="slider__toggle slider__toggle--current" type="button">2</button>
+            <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">2</span></button>
           </li>
           <li class="reviews__toggles-item">
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </li>
         </ul>
       </section>

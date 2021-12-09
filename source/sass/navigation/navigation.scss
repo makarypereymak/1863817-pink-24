@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: none;
 }
 
 .navigation__link {
@@ -9,8 +10,12 @@
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 13px;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  padding: 25px;
+  display: block;
+  background: #283645;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }

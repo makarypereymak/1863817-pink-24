@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -66,7 +67,7 @@
           </div>
         </fieldset>
         <fieldset class="form-achievements">
-          <legend class="form-achievements__title">Ваши безбашенные достижения в путешествии</legend>
+          <label class="form-achievements__title">Ваши безбашенные достижения в путешествии</label>
           <ul class="form-achievements__list">
             <li class="form-achievements__item">
               <input class="visually-hidden form-achievements__input" type="checkbox" name="selfie" checked>
@@ -111,7 +112,7 @@
           </div>
         </fieldset>
         <fieldset class="form-chcoice-os">
-          <legend class="form-chcoice-os__title">С каким приложением путешествовали?</legend>
+          <label class="form-chcoice-os__title">С каким приложением путешествовали?</label>
           <ul class="form-chcoice-os__list">
             <li class="form-chcoice-os__item">
               <input class="visually-hidden form-chcoice-os__input" type="radio" name="ios" value="yes" checked>
@@ -133,13 +134,15 @@
           </ul>
         </fieldset>
         <fieldset class="form-emotions">
-          <legend class="form-emotions__ttitle">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+          <label class="form-emotions__ttitle">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
           <textarea class="form-emotions__field" placeholder="Можно прям в красках, не стесняясь в выражениях">
           </textarea>
         </fieldset>
         <button class="form__button" type="submit">Отправить форму</button>
-        <span class="form__text-star">*</span>
-        <span class="form__text"> — обязательные поля</span>
+        <div class="form__text">
+          <span class="form__text-star">*</span>
+          <span class="form__text-words"> — обязательные поля</span>
+        </div>
       </form>
     </main>
     <footer class="page-footer">

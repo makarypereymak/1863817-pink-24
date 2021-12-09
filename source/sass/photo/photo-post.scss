@@ -1,16 +1,37 @@
 .photo-post__button {
   font-weight: bold;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 13px;
   color: #d22856;
+  border: 3px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 29px;
+  width: 280px;
+  padding: 18px 90px;
+  display: inline-block;
+}
+
+.photo-post__button:first-of-type {
+  margin-bottom: 12px;
+}
+
+.photo-post__button:last-child {
+  margin-bottom: 41px;
 }
 
 .photo-post__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
 }
 
 .photo-post {
+  padding-top: 20px;
   background-color: #f2f2f2;
+}
+
+.photo-post__form {
+  display: flex;
+  flex-direction: column;
 }

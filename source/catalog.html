@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -53,7 +54,7 @@
       <section class="photo">
         <section class="photo__day-photo">
           <img class="photo__image photo__image--day-photo" src="../source/img/catalog-jpeg/panorama-mobile.jpg" width="320" height="137" alt="Фото дня.">
-          <blockquote class="comment">
+          <div class="comment">
             <span class="comment__name">
               Анна
             </span>
@@ -66,12 +67,12 @@
             <span class="comment__likes">
               Нравится: 215
             </span>
-          </blockquote>
+          </div>
         </section>
         <ul class="photo__list">
           <li class="photo__item">
             <img class="photo__image" src="../source/img/catalog-jpeg/photo-1-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
-            <blockquote class="comment">
+            <div class="comment">
               <span class="comment__name">
                 Левон
               </span>
@@ -84,11 +85,11 @@
               <span class="comment__likes">
                 Нравится: 356
               </span>
-            </blockquote>
+            </div>
           </li>
           <li class="photo__item">
             <img class="photo__image" src="../source/img/catalog-jpeg/photo-2-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
-            <blockquote class="comment">
+            <div class="comment">
               <span class="comment__name">
                 Антон
               </span>
@@ -101,11 +102,11 @@
               <span class="comment__likes">
                 Нравится: 666
               </span>
-            </blockquote>
+            </div>
           </li>
           <li class="photo__item">
             <img class="photo__image" src="../source/img/catalog-jpeg/photo-3-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
-            <blockquote class="comment">
+            <div class="comment">
               <span class="comment__name">
                 Борис
               </span>
@@ -118,11 +119,11 @@
               <span class="comment__likes">
                 Нравится: 215
               </span>
-            </blockquote>
+            </div>
           </li>
           <li class="photo__item">
             <img class="photo__image" src="../source/img/catalog-jpeg/photo-4-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
-            <blockquote class="comment">
+            <div class="comment">
               <span class="comment__name">
                 Сергей
               </span>
@@ -135,11 +136,11 @@
               <span class="comment__likes">
                 Нравится: 4
               </span>
-            </blockquote>
+            </div>
           </li>
           <li class="photo__item">
             <img class="photo__image" src="../source/img/catalog-jpeg/photo-5-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
-            <blockquote class="comment">
+            <div class="comment">
               <span class="comment__name">
                 Максим
               </span>
@@ -152,11 +153,11 @@
               <span class="comment__likes">
                 Нравится: 150
               </span>
-            </blockquote>
+            </div>
           </li>
           <li class="photo__item">
             <img class="photo__image" src="../source/img/catalog-jpeg/photo-6-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
-            <blockquote class="comment">
+            <div class="comment">
               <span class="comment__name">
                 Надежда
               </span>
@@ -169,16 +170,16 @@
               <span class="comment__likes">
                 Нравится: 2560
               </span>
-            </blockquote>
+            </div>
           </li>
         </ul>
       </section>
-      <p class="main-catalog__text">
-        Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+      <p class="main-catalog__text main-catalog__text--after-photo-list">
+        Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!
       </p>
       <section class="photo-post">
         <img class="photo-post__image" src="../source/img/catalog-jpeg/filter-mobile.jpg" width="280" height="374" alt="Пример фильтра.">
-        <form>
+        <form class="photo-post__form">
           <ul class="photo-post__list">
             <li class="photo-post__item">
               <button class="photo-post__button-settings" type="button"></button>

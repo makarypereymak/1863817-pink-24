@@ -4,6 +4,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #d22856;
+  margin-bottom: 40px;
+  display: block;
 }
 
 .form-chcoice-os__label {
@@ -20,6 +22,12 @@
 }
 
 .form-chcoice-os {
+  padding-top: 42px;
+  padding-bottom: 42px;
   border: none;
   background-color: #f2f2f2;
+}
+
+.form-chcoice-os__item:not(:last-child) {
+  margin-bottom: 38px;
 }

@@ -1,8 +1,13 @@
 .main-form__title {
+  position: relative;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: #ffffff;
+  margin: 0;
+  height: 171px;
+  padding: 36px 46px 51px 46px;
+  box-sizing: border-box;
 }
 
 .main-form__text {
@@ -10,4 +15,17 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  margin-top: 54px;
+}
+
+.main-form__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  height: 237px;
+  min-width: 320px;
+  top: -66px;
+  left: 0;
+  z-index: -1;
 }

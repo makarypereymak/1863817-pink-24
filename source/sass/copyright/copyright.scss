@@ -1,6 +1,14 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 41px;
+}
+
 .copyright__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: #283645;
+  margin-right: 15px;
 }
