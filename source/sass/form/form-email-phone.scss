@@ -1,0 +1,36 @@
+.form-email-phone__label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 10px;
+  color: #d22856;
+  margin-bottom: 17px;
+}
+
+.form-email-phone__field {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  width: 276px;
+  padding: 23px 0 23px 20px;
+  height: 59px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+.form-email-phone {
+  padding-top: 42px;
+  padding-bottom: 44px;
+  border: none;
+}
+
+.form-email-phone__element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 29px;
+}
+
+.form-email-phone__element:last-child {
+  margin-bottom: 0;
+}

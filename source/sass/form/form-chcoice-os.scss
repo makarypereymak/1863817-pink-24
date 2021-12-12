@@ -1,0 +1,33 @@
+.form-chcoice-os__title {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.form-chcoice-os__label {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form-chcoice-os__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-chcoice-os {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.form-chcoice-os__item:not(:last-child) {
+  margin-bottom: 38px;
+}

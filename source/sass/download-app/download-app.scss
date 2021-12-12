@@ -1,0 +1,36 @@
+.download-app__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 29px;
+  padding: 18px 39px;
+  display: inline-block;
+  margin-top: 29px;
+}
+
+.download-app__info-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 28px;
+  margin-bottom: 38px;
+  display: inline-block;
+}
+
+.download-app__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.download-app {
+  background-color: #1d2631;
+}
