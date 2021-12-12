@@ -1,0 +1,38 @@
+.tariff__item--name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.tariff__item--price {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.tariff__toggles-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 46px;
+}
+
+.tariff {
+  background-color: #f2f2f2;
+}
+
+.tariff__item:not(:first-child) {
+  background-color: #ffffff;
+}
+
+.tariff__price {
+  display: block;
+}

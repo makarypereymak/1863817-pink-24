@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+@import "global/page.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/visually-hidden.scss";
+@import "page-header/page-header.scss";
+@import "navigation/navigation.scss";
+@import "advantages/advantages.scss";
+@import "comment/comment.scss";
+@import "contacts/contacts.scss";
+@import "copyright/copyright.scss";
+@import "download-app/download-app.scss";
+@import "form/form-achievements.scss";
+@import "form/form-chcoice-os.scss";
+@import "form/form-email-phone.scss";
+@import "form/form-emotions.scss";
+@import "form/form-name.scss";
+@import "form/form.scss";
+@import "main-catalog/main-catalog.scss";
+@import "main-form/main-form.scss";
+@import "page-footer/page-footer.scss";
+@import "photo/photo-post.scss";
+@import "photo/photo.scss";
+@import "reviews/reviews.scss";
+@import "tariff/tariff.scss";
+@import "tariff/filter.scss";
+@import "social/social.scss";
+@import "effect/effect.scss";
+

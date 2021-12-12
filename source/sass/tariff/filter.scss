@@ -1,0 +1,11 @@
+.filter {
+  width: 276px;
+  height: 59px;
+  padding-left: 20px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.filter:not(:nth-child(3)) {
+  display: none;
+}

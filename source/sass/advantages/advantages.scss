@@ -1,0 +1,91 @@
+.advantages {
+  position: relative;
+  z-index: -1;
+}
+
+.advantages__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #283645;
+  background-color: #ffffff;
+}
+
+.advantages__text:first-of-type {
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+
+.advantages__text:last-of-type {
+  margin-bottom: 70px;
+}
+
+.advantages__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.advantages__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  margin: 0;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #f2f2f2;
+  display: inline-block;
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item:first-child {
+  margin-top: 53px;
+}
+
+.advantages__item:not(:first-child) {
+  margin-top: 43px;
+}
+
+.advantages__item:last-child {
+  padding-bottom: 325px;
+}
+
+.advantages__item:first-child::before {
+  content: none;
+  position: absolute;
+  background-image: url("../img/screen-1.jpg"), url("../img/phone-gold.png");
+  background-repeat: no-repeat;
+  width: 157px;
+  height: 320px;
+}
+
+.advantages__item:nth-child(2)::before {
+  content: none;
+  position: absolute;
+  background-image: url("../img/screen-2.jpg"), url("../img/phone-gold.png");
+  background-repeat: no-repeat;
+  width: 157px;
+  height: 320px;
+}
+
+.advantages__item:last-child::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/screen-3.jpg"), url("../img/phone-gold.png");
+  background-repeat: no-repeat;
+  width: 157px;
+  height: 320px;
+  background-position: center;
+  left: 82px;
+  top: 144px;
+}
