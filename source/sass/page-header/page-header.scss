@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.3);
   padding-top: 19px;
   display: flex;
