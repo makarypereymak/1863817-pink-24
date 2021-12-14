@@ -33,4 +33,19 @@
 
 .download-app {
   background-color: #1d2631;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 349px;
+    background: inherit;
+    z-index: 3;
+  }
+}
+
+.download-app__wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
 }

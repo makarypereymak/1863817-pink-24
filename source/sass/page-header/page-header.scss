@@ -5,5 +5,11 @@
   padding-top: 19px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
 }
+

@@ -1,11 +1,51 @@
 .filter {
+  display: inline-block;
   width: 276px;
   height: 59px;
   padding-left: 20px;
   padding-top: 24px;
   padding-bottom: 25px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  line-height: 10px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    height: 45px;
+    padding-left: 15px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    display: table-cell;
+    text-transform: none;
+  }
 }
 
 .filter:not(:nth-child(3)) {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+  }
+}
+
+.filter:not(:nth-child(1)) {
+  @media (min-width: $tablet-width) {
+    color: rgba(255, 255, 255, 0);
+  }
+}
+
+.filter-yes {
+  background-image: url("../img/yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter-no {
+  background-image: url("../img/no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

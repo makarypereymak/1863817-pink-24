@@ -16,6 +16,10 @@
   line-height: 30px;
   color: #283645;
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .reviews__list {
@@ -49,4 +53,13 @@
 
 .reviews__comment {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.reviews__toggles-item:not(:last-child) {
+  margin-right: 13px;
 }
