@@ -8,6 +8,15 @@
   line-height: 30px;
   color: #000000;
   display: block;
+  font-style: normal;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews__author-name-more {
@@ -19,6 +28,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
 
@@ -37,6 +50,10 @@
   justify-content: center;
   margin-top: 24px;
   margin-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .reviews__text {
@@ -49,6 +66,10 @@
 
 .reviews__slider {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .reviews__comment {

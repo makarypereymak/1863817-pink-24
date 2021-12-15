@@ -46,6 +46,10 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .tariff__title {
@@ -61,6 +65,10 @@
     width: 152px;
     height: 75px;
     padding-left: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
 
