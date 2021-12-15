@@ -18,6 +18,12 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .contacts__item {
@@ -28,6 +34,10 @@
 
 .contacts__item.phone {
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 97px;
+  }
 }
 
 .contacts__item.email {
