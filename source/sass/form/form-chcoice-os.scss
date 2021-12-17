@@ -1,3 +1,26 @@
+.form-chcoice-os {
+  padding-top: 0;
+  padding-bottom: 42px;
+  border: none;
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+    margin-bottom: 65px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
+}
+
 .form-chcoice-os__title {
   font-weight: normal;
   font-size: 14px;
@@ -6,6 +29,14 @@
   color: #d22856;
   margin-bottom: 40px;
   display: block;
+  background-color: #f2f2f2;
+  padding-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+    padding-top: 0;
+    width: 368px;
+  }
 }
 
 .form-chcoice-os__label {
@@ -21,13 +52,40 @@
   list-style-type: none;
 }
 
-.form-chcoice-os {
-  padding-top: 42px;
-  padding-bottom: 42px;
-  border: none;
-  background-color: #f2f2f2;
-}
-
 .form-chcoice-os__item:not(:last-child) {
   margin-bottom: 38px;
+}
+
+.form-chcoice-os__item {
+  position: relative;
+}
+
+.form-chcoice-os__control-mark {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #e5e5e5;
+  left: 0;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 72px;
+  }
+}
+
+.form-chcoice-os__input:checked + .form-chcoice-os__control-mark::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+  top: 11px;
+  left: 11px;
 }

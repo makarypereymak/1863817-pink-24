@@ -1,5 +1,21 @@
 .form {
   margin-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 74px;
+    column-gap: 64px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
 
 .form__button {
@@ -28,4 +44,18 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+.form__submit {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    order: 6;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+  }
 }

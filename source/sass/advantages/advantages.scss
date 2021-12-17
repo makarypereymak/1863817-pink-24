@@ -146,7 +146,7 @@
   height: 320px;
   background-position: center;
 
-  @media (min-width: $desktop-width)  {
+  @media (min-width: $desktop-width) {
     content: "";
     top: -307px;
     width: 186px;
@@ -163,7 +163,7 @@
   height: 320px;
   background-position: center;
 
-  @media (min-width: $desktop-width)  {
+  @media (min-width: $desktop-width) {
     content: "";
     top: -307px;
     width: 186px;
@@ -186,7 +186,7 @@
     content: none;
   }
 
-  @media (min-width: $desktop-width)  {
+  @media (min-width: $desktop-width) {
     content: "";
     top: -307px;
     width: 186px;
