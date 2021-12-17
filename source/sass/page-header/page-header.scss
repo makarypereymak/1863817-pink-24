@@ -1,7 +1,17 @@
 .page-header {
+  position: relative;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.3);
   padding-top: 19px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+    min-height: 110px;
+    box-sizing: border-box;
+  }
 }
+

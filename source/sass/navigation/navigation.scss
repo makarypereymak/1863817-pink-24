@@ -3,6 +3,10 @@
   margin: 0;
   list-style-type: none;
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .navigation__link {
@@ -18,4 +22,26 @@
   display: block;
   background: #283645;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  @media (min-width: $desktop-width) {
+    background-color: inherit;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 13px;
+    box-shadow: none;
+    text-transform: capitalize;
+    padding: 0;
+  }
+}
+
+.navigation__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.navigation__item:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+  }
 }
