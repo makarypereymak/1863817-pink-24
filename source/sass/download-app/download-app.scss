@@ -1,3 +1,20 @@
+.download-app {
+  background-color: #1d2631;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 349px;
+    background: inherit;
+    z-index: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 449px;
+  }
+}
+
 .download-app__button {
   font-weight: bold;
   font-size: 18px;
@@ -34,23 +51,6 @@
 
 .download-app__item:not(:last-child) {
   margin-right: 35px;
-}
-
-.download-app {
-  background-color: #1d2631;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: absolute;
-    top: 349px;
-    background: inherit;
-    z-index: 3;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 449px;
-  }
 }
 
 .download-app__wrapper {

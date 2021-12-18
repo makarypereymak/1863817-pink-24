@@ -1,7 +1,36 @@
 .photo__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px 0 20px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px 0 130px;
+  }
+}
+
+.photo__item {
+  width: 300px;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 20px;
+    }
+  }
 }
 
 .photo__image {

@@ -1,0 +1,11 @@
+.wrapper {
+  @media (min-width: $desktop-width) {
+    &--for-photo-post {
+      padding: 0 130px 0 130px;
+    }
+
+    &--for-buttons {
+      display: flex;
+    }
+  }
+}
