@@ -25,14 +25,8 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-  }
-}
-
-.filter:not(:nth-child(3)) {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: table-cell;
+    width: 234px;
+    height: 59px;
   }
 }
 
@@ -45,11 +39,19 @@
 .filter-yes {
   background-image: url("../img/yes.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 228px 19px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+  }
 }
 
 .filter-no {
   background-image: url("../img/no.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 228px 19px;
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+  }
 }

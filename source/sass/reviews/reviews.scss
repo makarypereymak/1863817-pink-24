@@ -1,5 +1,15 @@
 .reviews {
+  position: relative;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 126px;
+  }
 }
 
 .reviews__author-name {
@@ -40,6 +50,14 @@
   padding: 0;
   list-style-type: none;
   padding-top: 50px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 193px;
+  }
+}
+
+.reviews__item {
+  width: 688px;
 }
 
 .reviews__toggles-list {
@@ -62,6 +80,11 @@
   line-height: 30px;
   color: #283645;
   margin-top: 21px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-top: 0;
+  }
 }
 
 .reviews__slider {
@@ -69,6 +92,12 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    position: absolute;
+    top: 213px;
+
+    &:first-child {
+      margin-right: 896px;
+    }
   }
 }
 
@@ -83,4 +112,60 @@
 
 .reviews__toggles-item:not(:last-child) {
   margin-right: 13px;
+}
+
+.reviews__button {
+  width: 22px;
+  height: 41px;
+  position: relative;
+  border: none;
+  background-color: #ffffff;
+
+  &--prev::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: rgba(40, 54, 69, 0.3);
+    transform: rotate(-45deg);
+    left: -4px;
+    top: 10px;
+    border-radius: 20px;
+  }
+
+  &--prev::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 2px;
+    background-color: rgba(40, 54, 69, 0.3);
+    transform: rotate(45deg);
+    left: -2px;
+    bottom: 9px;
+    border-radius: 20px;
+  }
+
+  &--next::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: rgba(40, 54, 69, 0.3);
+    transform: rotate(-45deg);
+    right: -2px;
+    bottom: 9px;
+    border-radius: 20px;
+  }
+
+  &--next::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 2px;
+    background-color: rgba(40, 54, 69, 0.3);
+    transform: rotate(45deg);
+    right: -2px;
+    top: 9px;
+    border-radius: 20px;
+  }
 }

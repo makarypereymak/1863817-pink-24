@@ -16,3 +16,21 @@
   color: #283645;
   margin-right: 15px;
 }
+
+.copyright__logo {
+  fill: #d22856;
+}
+
+.copyright__link {
+  &:hover .copyright__logo {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .copyright__logo {
+    fill: #283645;
+  }
+}
