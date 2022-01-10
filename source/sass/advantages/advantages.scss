@@ -18,6 +18,8 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
+    position: relative;
+    z-index: -2;
   }
 }
 
@@ -62,15 +64,27 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    width: 252px;
   }
 }
 
 .advantages__list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style-type: none;
   background-color: #f2f2f2;
   display: inline-block;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 33px;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0) 50%, #f2f2f2 50%);
+    top: -32px;
+    left: 0;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -89,14 +103,27 @@
       right: 372px;
       bottom: -63px;
     }
+
+    &::after {
+      min-height: 52px;
+      top: -51px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: baseline;
+    padding-left: 130px;
+    padding-right: 130px;
 
     &::before {
       content: none;
+    }
+
+    &::after {
+      min-height: 103px;
+      top: -306px;
+      z-index: -1;
     }
   }
 }
@@ -110,6 +137,20 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 59px;
+    width: 300px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+      opacity: 0.3;
+      background-repeat: no-repeat;
+      filter: blur(4px);
+      width: 300px;
+      height: 8px;
+      top: -8px;
+      left: 0;
+    }
   }
 }
 
@@ -151,6 +192,7 @@
     top: -307px;
     width: 186px;
     height: 382px;
+    left: 60px;
   }
 }
 
@@ -168,6 +210,7 @@
     top: -307px;
     width: 186px;
     height: 382px;
+    left: 60px;
   }
 }
 
@@ -191,6 +234,7 @@
     top: -307px;
     width: 186px;
     height: 382px;
+    left: 60px;
   }
 }
 
