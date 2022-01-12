@@ -33,8 +33,9 @@
 }
 
 .navigation--opened .navigation__toggle {
-  width: 50px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
+  padding: 0;
   background-color: inherit;
   position: relative;
   border: none;
@@ -43,8 +44,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: -3px;
     width: 29px;
     height: 3px;
     background-color: #ffffff;
@@ -150,4 +151,8 @@
   left: 0;
   background-color: #283645;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgb(255 255 255 / 15%);
+
+  @media (min-width: $tablet-width) {
+    min-height: 110px;
+  }
 }

@@ -1,4 +1,10 @@
 .wrapper {
+  @media (min-width: $tablet-width) {
+    &--for-photo-post {
+
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &--for-photo-post {
       padding: 0 130px 0 130px;
