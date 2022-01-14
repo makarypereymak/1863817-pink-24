@@ -94,7 +94,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/screen-tablet.jpg"), url("../img/iphone-tablet.png");
+      background-image: url("../img/no-retina/tablet/index/screen-3-tablet-no-retina.jpg"), url("../img/no-retina/tablet/index/phone-gold-tablet-no-retina.png");
       background-repeat: no-repeat;
       background-size: 237px 421px, 268px 547px;
       background-position: 15px 61px, 0 0;
@@ -107,6 +107,12 @@
     &::after {
       min-height: 52px;
       top: -51px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../img/retina/tablet/index/screen-3-tablet-retina.jpg"), url("../img/retina/tablet/index/phone-gold-tablet-retina.png");
+      }
     }
   }
 
@@ -179,45 +185,48 @@
 }
 
 .advantages__item:first-child::before {
-  content: none;
-  position: absolute;
-  background-image: url("../img/screen-1.jpg"), url("../img/phone-gold.png");
-  background-repeat: no-repeat;
-  width: 157px;
-  height: 320px;
-  background-position: center;
-
   @media (min-width: $desktop-width) {
     content: "";
+    position: absolute;
+    background-image: url("../img/no-retina/desktop/index/screen-1-desktop-no-retina.jpg"), url("../img/no-retina/desktop/index/phone-gold-desktop-no-retina.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 165px 294px, 186px 382px;
     top: -307px;
     width: 186px;
     height: 382px;
     left: 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/desktop/index/screen-1-desktop-retina.jpg"), url("../img/retina/desktop/index/phone-gold-desktop-retina.png");
+    }
   }
 }
 
 .advantages__item:nth-child(2)::before {
-  content: none;
-  position: absolute;
-  background-image: url("../img/screen-2.jpg"), url("../img/phone-gold.png");
-  background-repeat: no-repeat;
-  width: 157px;
-  height: 320px;
-  background-position: center;
-
   @media (min-width: $desktop-width) {
     content: "";
+    position: absolute;
+    background-image: url("../img/no-retina/desktop/index/screen-2-desktop-no-retina.jpg"), url("../img/no-retina/desktop/index/phone-gold-desktop-no-retina.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 165px 294px, 186px 382px;
     top: -307px;
     width: 186px;
     height: 382px;
     left: 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/desktop/index/screen-2-desktop-retina.jpg"), url("../img/retina/desktop/index/phone-gold-desktop-retina.png");
+    }
   }
 }
 
 .advantages__item:last-child::before {
   content: "";
   position: absolute;
-  background-image: url("../img/screen-3.jpg"), url("../img/phone-gold.png");
+  background-image: url("../img/no-retina/mobile/index/screen-3-mobile-no-retina.jpg"), url("../img/no-retina/mobile/index/phone-gold-mobile-no-retina.png");
+  background-size: 136px 245px, 157px 320px;
   background-repeat: no-repeat;
   width: 157px;
   height: 320px;
@@ -225,16 +234,26 @@
   left: 82px;
   top: 144px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/retina/mobile/index/screen-3-mobile-retina.jpg"), url("../img/retina/mobile/index/phone-gold-mobile-retina.png");
+  }
+
   @media (min-width: $tablet-width) {
     content: none;
   }
 
   @media (min-width: $desktop-width) {
     content: "";
+    background-image: url("../img/no-retina/desktop/index/screen-3-desktop-no-retina.jpg"), url("../img/no-retina/desktop/index/phone-gold-desktop-no-retina.png");
+    background-size: 165px 294px, 186px 382px;
     top: -307px;
     width: 186px;
     height: 382px;
     left: 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/desktop/index/screen-3-desktop-retina.jpg"), url("../img/retina/desktop/index/phone-gold-desktop-retina.png");
+    }
   }
 }
 
