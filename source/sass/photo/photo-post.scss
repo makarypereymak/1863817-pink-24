@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 45px;
+    padding: 57px 20px 54px 20px;
   }
 }
 
@@ -48,6 +49,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    width: 202px;
   }
 }
 
@@ -78,13 +80,43 @@
     width: 32px;
     height: 32px;
   }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    &--crop {
+      left: -51px;
+      top: -11px;
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      left: -52px;
+      top: -11px;
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      left: -48px;
+      top: -8px;
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
 
 .photo-post__item {
+  position: relative;
   margin-right: 35px;
 
   @media (min-width: $tablet-width) {
     display: flex;
+
+    &:first-child {
+      margin-top: 19px;
+    }
   }
 }
 
