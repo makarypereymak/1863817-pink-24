@@ -12,6 +12,8 @@
 
   @media (min-width: $desktop-width) {
     top: 449px;
+    display: block;
+    padding-left: 130px;
   }
 }
 
@@ -27,6 +29,15 @@
   padding: 18px 39px;
   display: inline-block;
   margin-top: 29px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download-app__info-text {
@@ -37,6 +48,11 @@
   margin-top: 28px;
   margin-bottom: 38px;
   display: inline-block;
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    font-size: 18px;
+  }
 }
 
 .download-app__list {

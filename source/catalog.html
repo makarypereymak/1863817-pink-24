@@ -16,7 +16,7 @@
       <a class="page-header__link">
         <img class="page-header__logo" src="img/pink-logo-header-mobile.svg" width="74" height="23" alt="Логотип сайта Пинк.">
       </a>
-      <nav class="navigation">
+      <nav class="navigation navigation--closed">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">
             Открыть меню
@@ -57,7 +57,11 @@
       </p>
       <section class="photo">
         <section class="photo__day-photo">
-          <img class="photo__image photo__image--day-photo" src="img/catalog-jpeg/panorama-mobile.jpg" width="320" height="137" alt="Фото дня.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/no-retina/desktop/catalog/panorama-desktop-no-retina.jpg 1x, img/retina/desktop/catalog/panorama-desktop-retina.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/no-retina/tablet/catalog/panorama-tablet-no-retina.jpg 1x, img/retina/tablet/catalog/panorama-tablet-retina.jpg 2x">
+            <img class="photo__image photo__image--day-photo" src="img/no-retina/mobile/catalog/panorama-mobile-no-retina.jpg" srcset="img/retina/mobile/catalog/panorama-mobile-retina.jpg 2x" width="320" height="137" alt="Фото дня.">
+          </picture>
           <div class="comment comment--day-photo">
             <span class="comment__name">
               Анна
@@ -75,7 +79,11 @@
         </section>
         <ul class="photo__list">
           <li class="photo__item">
-            <img class="photo__image" src="img/catalog-jpeg/photo-1-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/no-retina/desktop/catalog/photo-1-desktop-no-retina.jpg 1x, img/retina/desktop/catalog/photo-1-desktop-retina.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/no-retina/tablet/catalog/photo-1-tablet-no-retina.jpg 1x, img/retina/tablet/catalog/photo-1-tablet-retina.jpg 2x">
+              <img class="photo__image" src="img/no-retina/mobile/catalog/photo-1-mobile-no-retina.jpg" srcset="img/retina/mobile/catalog/photo-1-mobile-retina.jpg 2x" width="280" height="180" alt="Фотография выложенная пользователем.">
+            </picture>
             <div class="comment">
               <span class="comment__name">
                 Левон
@@ -92,7 +100,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image" src="img/catalog-jpeg/photo-2-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/no-retina/desktop/catalog/photo-2-desktop-no-retina.jpg 1x, img/retina/desktop/catalog/photo-2-desktop-retina.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/no-retina/tablet/catalog/photo-2-tablet-no-retina.jpg 1x, img/retina/tablet/catalog/photo-2-tablet-retina.jpg 2x">
+              <img class="photo__image" src="img/no-retina/mobile/catalog/photo-2-mobile-no-retina.jpg" srcset="img/retina/mobile/catalog/photo-2-mobile-retina.jpg 2x" width="280" height="180" alt="Фотография выложенная пользователем.">
+            </picture>
             <div class="comment">
               <span class="comment__name">
                 Антон
@@ -109,7 +121,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image" src="img/catalog-jpeg/photo-3-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/no-retina/desktop/catalog/photo-3-desktop-no-retina.jpg 1x, img/retina/desktop/catalog/photo-3-desktop-retina.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/no-retina/tablet/catalog/photo-3-tablet-no-retina.jpg 1x, img/retina/tablet/catalog/photo-3-tablet-retina.jpg 2x">
+              <img class="photo__image" src="img/no-retina/mobile/catalog/photo-3-mobile-no-retina.jpg" srcset="img/retina/mobile/catalog/photo-3-mobile-retina.jpg 2x" width="280" height="180" alt="Фотография выложенная пользователем.">
+            </picture>
             <div class="comment">
               <span class="comment__name">
                 Борис
@@ -126,7 +142,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image" src="img/catalog-jpeg/photo-4-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/no-retina/desktop/catalog/photo-4-desktop-no-retina.jpg 1x, img/retina/desktop/catalog/photo-4-desktop-retina.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/no-retina/tablet/catalog/photo-4-tablet-no-retina.jpg 1x, img/retina/tablet/catalog/photo-4-tablet-retina.jpg 2x">
+              <img class="photo__image" src="img/no-retina/mobile/catalog/photo-4-mobile-no-retina.jpg" srcset="img/retina/mobile/catalog/photo-4-mobile-retina.jpg 2x" width="280" height="180" alt="Фотография выложенная пользователем.">
+            </picture>
             <div class="comment">
               <span class="comment__name">
                 Сергей
@@ -143,7 +163,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image" src="img/catalog-jpeg/photo-5-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/no-retina/desktop/catalog/photo-5-desktop-no-retina.jpg 1x, img/retina/desktop/catalog/photo-5-desktop-retina.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/no-retina/tablet/catalog/photo-5-tablet-no-retina.jpg 1x, img/retina/tablet/catalog/photo-5-tablet-retina.jpg 2x">
+              <img class="photo__image" src="img/no-retina/mobile/catalog/photo-5-mobile-no-retina.jpg" srcset="img/retina/mobile/catalog/photo-5-mobile-retina.jpg 2x" width="280" height="180" alt="Фотография выложенная пользователем.">
+            </picture>
             <div class="comment">
               <span class="comment__name">
                 Максим
@@ -160,7 +184,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image" src="img/catalog-jpeg/photo-6-mobile.jpg" width="280" height="180" alt="Фотография выложенная пользователем.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/no-retina/desktop/catalog/photo-6-desktop-no-retina.jpg 1x, img/retina/desktop/catalog/photo-6-desktop-retina.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/no-retina/tablet/catalog/photo-6-tablet-no-retina.jpg 1x, img/retina/tablet/catalog/photo-6-tablet-retina.jpg 2x">
+              <img class="photo__image" src="img/no-retina/mobile/catalog/photo-6-mobile-no-retina.jpg" srcset="img/retina/mobile/catalog/photo-6-mobile-retina.jpg 2x" width="280" height="180" alt="Фотография выложенная пользователем.">
+            </picture>
             <div class="comment">
               <span class="comment__name">
                 Надежда
@@ -183,7 +211,10 @@
       </p>
       <div class="wrapper wrapper--for-photo-post">
         <section class="photo-post">
-          <img class="photo-post__image" src="img/catalog-jpeg/filter-mobile.jpg" width="280" height="374" alt="Пример фильтра.">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/no-retina/tablet/catalog/photo-filter-tablet-no-retina.jpg 1x, img/retina/tablet/catalog/photo-filter-tablet-retina.jpg 2x">
+            <img class="photo__image photo__image--filter" src="img/no-retina/mobile/catalog/photo-filter-mobile-no-retina.jpg" srcset="img/retina/mobile/catalog/photo-filter-mobile-retina.jpg 2x" width="280" height="374" alt="Фотография выложенная пользователем.">
+          </picture>
           <form class="photo-post__form">
             <ul class="photo-post__list">
               <li class="photo-post__item">
@@ -302,5 +333,6 @@
         </article>
       </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

@@ -1,14 +1,15 @@
 .promo {
   position: relative;
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../img/no-retina/mobile/index/back-mobile-no-retina.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -66px;
 
   &::after {
     content: "";
-    background-image: url("../img/screen-nav.jpg");
+    background-image: url("../img/no-retina/mobile/index/screen-nav-mobile-no-retina.jpg");
     background-repeat: no-repeat;
+    background-size: 111px 197px;
     position: absolute;
     width: 111px;
     height: 197px;
@@ -18,18 +19,32 @@
 
   &::before {
     content: "";
-    background-image: url("../img/phone.png");
+    background-image: url("../img/no-retina/mobile/index/phone-mobile-no-retina.png");
     background-repeat: no-repeat;
+    background-size: 320px 286px;
     position: absolute;
     width: 320px;
     height: 286px;
     left: 0;
     bottom: 0;
-    z-index: 3;
+    z-index: 1;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/retina/mobile/index/back-mobile-retina.jpg");
+
+    &::after {
+      background-image: url("../img/retina/mobile/index/screen-nav-mobile-retina.jpg");
+    }
+
+    &::before {
+      background-image: url("../img/retina/mobile/index/phone-mobile-retina.png");
+    }
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/back-nav-tablet.jpg");
+    background-image: url("../img/no-retina/tablet/index/back-tablet-no-retina.jpg");
+    background-size: cover;
     margin-top: -110px;
     min-height: 729px;
     display: grid;
@@ -37,7 +52,8 @@
     justify-items: center;
 
     &::after {
-      background-image: url("../img/screen-nav-tablet.jpg");
+      background-image: url("../img/no-retina/tablet/index/screen-nav-tablet-no-retina.jpg");
+      background-size: 195px 346px;
       width: 195px;
       height: 346px;
       left: 371px;
@@ -45,18 +61,34 @@
     }
 
     &::before {
-      background-image: url("../img/iphone-nav-tablet.png");
+      background-image: url("../img/no-retina/tablet/index/phone-tablet-no-retina.png");
+      background-size: 660px 545px;
       width: 660px;
       height: 545px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/tablet/index/back-tablet-retina.jpg");
+
+      &::after {
+        background-image: url("../img/retina/tablet/index/screen-nav-tablet-retina.jpg");
+      }
+
+      &::before {
+        background-image: url("../img/retina/tablet/index/phone-tablet-retina.png");
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/back-desktop.jpg");
+    background-image: url("../img/no-retina/desktop/index/back-desktop-no-retina.jpg");
+    background-size: cover;
     min-height: 853px;
+    padding-left: 130px;
 
     &::after {
-      background-image: url("../img/screen-nav-desktop.jpg");
+      background-image: url("../img/no-retina/desktop/index/screen-nav-desktop-no-retina.jpg");
+      background-size: 230px 408px;
       width: 230px;
       height: 408px;
       left: 720px;
@@ -64,11 +96,24 @@
     }
 
     &::before {
-      background-image: url("../img/iphone-desktop.png");
+      background-image: url("../img/no-retina/desktop/index/phone-desktop-no-retina.png");
+      background-size: 1050px 645px;
       width: 1050px;
       height: 645px;
       left: auto;
       right: 0;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/desktop/index/back-desktop-retina.jpg");
+
+      &::after {
+        background-image: url("../img/retina/desktop/index/screen-nav-desktop-retina.jpg");
+      }
+
+      &::before {
+        background-image: url("../img/retina/desktop/index/phone-desktop-retina.png");
+      }
     }
   }
 }
@@ -93,6 +138,7 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
+    justify-self: left;
   }
 }
 

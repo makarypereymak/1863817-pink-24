@@ -1,16 +1,6 @@
 .page-footer {
   padding-top: 50px;
   padding-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 130px;
-    padding-right: 130px;
-  }
 }
 
 .page-footer__text {
@@ -32,6 +22,16 @@
   }
 }
 
+.page-footer__logo {
+  &--glasses {
+    fill: #d22856;
+  }
+
+  &--text {
+    fill: #283645;
+  }
+}
+
 .page-footer__link {
   display: block;
   margin-bottom: 41px;
@@ -39,18 +39,99 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  &:hover .page-footer__logo--text {
+    fill: #d22856;
+  }
+
+  &:active .page-footer__logo--text {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.page-footer__wraper:first-child {
-  margin-bottom: 41px;
+.page-footer__wraper {
+  position: relative;
+
+  &:first-child {
+    margin-bottom: 38px;
+  }
+
+  &:first-child::before {
+    content: "";
+    position: absolute;
+    min-height: 34px;
+    width: 50%;
+    left: 0;
+    bottom: -70px;
+    background-image: linear-gradient(to right top, rgba(255, 255, 255, 0) 50%, #ffffff 50%);
+  }
+
+  &:first-child::after {
+    content: "";
+    position: absolute;
+    min-height: 34px;
+    width: 50%;
+    right: 0;
+    bottom: -70px;
+    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, #ffffff 50%);
+  }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:first-child {
+      margin-bottom: 36px;
+    }
+
+    &:first-child::before {
+      min-height: 74px;
+      bottom: -108px;
+    }
+
+    &:first-child::after {
+      min-height: 74px;
+      bottom: -108px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+
+    &:first-child::before {
+      min-height: 106px;
+      bottom: -140px;
+    }
+
+    &:first-child::after {
+      min-height: 106px;
+      bottom: -140px;
+    }
   }
 }
 
 .page-footer__wraper.social {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+}
+
+.page-footer iframe {
+  display: block;
+  border: none;
+  margin-bottom: 40px;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 502px;
   }
 }

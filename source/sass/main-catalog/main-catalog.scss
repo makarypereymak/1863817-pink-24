@@ -9,25 +9,37 @@
   min-height: 237px;
   padding: 102px 74px 0 74px;
   box-sizing: border-box;
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../img/no-retina/mobile/index/back-mobile-no-retina.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 320px;
   z-index: -1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/retina/mobile/index/back-mobile-retina.jpg");
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url("../img/back-nav-tablet.jpg");
+    background-image: url("../img/no-retina/tablet/index/back-tablet-no-retina.jpg");
     margin-top: -110px;
     min-height: 440px;
     min-width: 660px;
     padding-top: 191px;
     font-size: 50px;
     line-height: 68px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/tablet/index/back-tablet-retina.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/back-desktop.jpg");
+    background-image: url("../img/no-retina/desktop/index/back-desktop-no-retina.jpg");
     min-height: 394px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/desktop/index/back-desktop-retina.jpg");
+    }
   }
 }
 
@@ -53,4 +65,3 @@
     padding-bottom: 52px;
   }
 }
-

@@ -20,5 +20,12 @@
     opacity: 1;
     box-sizing: content-box;
   }
-}
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

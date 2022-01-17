@@ -14,6 +14,8 @@
 }
 
 .photo__item {
+  margin-left: auto;
+  margin-right: auto;
   width: 300px;
 
   @media (min-width: $tablet-width) {
@@ -35,6 +37,53 @@
 
 .photo__image {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+
+  &--day-photo {
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: $tablet-width) {
+      width: 660px;
+      height: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      height: 506px;
+    }
+  }
+
+  &--filter {
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      height: 400px;
+    }
+  }
+}
+
+.photo__image.photo__image--day-photo {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 506px;
+  }
 }
 
 .photo__day-photo {
