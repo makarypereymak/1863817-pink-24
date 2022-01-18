@@ -27,20 +27,46 @@
   &--text {
     fill: #ffffff;
   }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      fill: #ffffff;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      fill: #ffffff;
+    }
+  }
 }
 
 .page-header__link {
   z-index: 2;
 
-  &:hover .page-header__logo--text {
+  &:hover .page-header__logo {
     fill: #d22856;
   }
 
-  &:active .page-header__logo--text {
-    fill: #ffffff;
-  }
-
-  &:active {
-    opacity: 0.3;
+  &:active .page-header__logo {
+    fill: rgba(255, 255, 255, 0.3);
   }
 }
