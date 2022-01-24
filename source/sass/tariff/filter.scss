@@ -13,6 +13,10 @@
   border: 2px solid #e5e5e5;
   border-radius: 1px 0 0 0;
 
+  &:first-child {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 153px;
     height: 45px;

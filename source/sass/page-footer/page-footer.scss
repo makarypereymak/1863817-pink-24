@@ -1,6 +1,10 @@
 .page-footer {
-  padding-top: 50px;
+  padding-top: 38px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
 }
 
 .page-footer__text {
@@ -124,14 +128,14 @@
 .page-footer iframe {
   display: block;
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 29px;
   height: 200px;
 
   @media (min-width: $tablet-width) {
-    height: 374px;
+    height: 366px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     height: 502px;
   }
 }

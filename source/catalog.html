@@ -4,11 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" sizes="32x32">
-    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="images/favicons/apple.png" sizes="180x180">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png" sizes="180x180">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
@@ -54,7 +54,7 @@
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link">
+              <a class="navigation__link navigation__link--active-catalog">
                 Фотографии
               </a>
             </li>
@@ -74,10 +74,10 @@
     </header>
     <main class="page-main main-catalog">
       <h1 class="main-catalog__title">
-        Фотографии пользователей
+        Фотографии <br> пользователей
       </h1>
       <p class="main-catalog__text">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?
       </p>
       <section class="photo">
         <section class="photo__day-photo">
@@ -299,7 +299,7 @@
             </div>
             <div class="wrapper wrapper--for-buttons">
               <button class="photo-post__button" type="submit">Запостить</button>
-              <button class="photo-post__button" type="button" disabled>Отмена</button>
+              <button class="photo-post__button photo-post__button--disabled" type="button" disabled>Отмена</button>
             </div>
           </form>
         </section>

@@ -4,11 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" sizes="32x32">
-    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="images/favicons/apple.png" sizes="180x180">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png" sizes="180x180">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
@@ -59,7 +59,7 @@
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link">
+              <a class="navigation__link navigation__link--active-form">
                 конкурс
               </a>
             </li>
@@ -77,7 +77,7 @@
         Конкурс на самое безбашенное путешествие с Пинк
       </h1>
       <p class="main-form__text">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form-name">
@@ -95,7 +95,7 @@
           </div>
         </fieldset>
         <fieldset class="form-achievements">
-          <legend class="form-achievements__title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="form-achievements__title">Ваши безбашенные <br>достижения в путешествии</legend>
           <ul class="form-achievements__list">
             <li class="form-achievements__item">
               <input class="visually-hidden form-achievements__input" type="checkbox" name="selfie" checked>
@@ -173,7 +173,7 @@
           <button class="form__button" type="submit">Отправить форму</button>
           <div class="form__text">
             <span class="form__text-star">*</span>
-            <span class="form__text-words"> — обязательные поля</span>
+            <span class="form__text-words"> — обязательные <span class="form__text-words-more">для заполнения</span>поля</span>
           </div>
         </fieldset>
       </form>

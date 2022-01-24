@@ -3,7 +3,7 @@
   font-size: 18px;
   line-height: 13px;
   color: #283645;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 .contacts__link {
@@ -53,6 +53,12 @@
 
 .contacts__item.email {
   margin-bottom: 35px;
+}
+
+.contacts__item.addres {
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+  }
 }
 
 .contacts__item.address .contacts__link {
