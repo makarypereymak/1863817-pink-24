@@ -81,4 +81,8 @@
   box-sizing: border-box;
   width: 14px;
   height: 14px;
+
+  &:active {
+    background-color: #d22856;
+  }
 }

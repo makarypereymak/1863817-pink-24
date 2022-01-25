@@ -8,21 +8,28 @@
 }
 
 .page-footer__text {
+  display: block;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   color: #283645;
   margin-top: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 45px;
+  width: 222px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 54px;
+    width: 370px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
+    width: 462px;
   }
 }
 
@@ -132,10 +139,11 @@
   height: 200px;
 
   @media (min-width: $tablet-width) {
-    height: 366px;
+    height: 374px;
   }
 
   @media (min-width: $desktop-width) {
     height: 502px;
+    margin-bottom: 70px;
   }
 }

@@ -128,6 +128,16 @@
   border: none;
   background-color: #ffffff;
 
+  &:hover::before,
+  &:hover::after {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+
   &--prev {
     margin-right: 896px;
   }

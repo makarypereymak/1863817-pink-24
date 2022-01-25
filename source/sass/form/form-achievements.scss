@@ -136,3 +136,19 @@
     display: none;
   }
 }
+
+.form-achievements__input:hover + .form-achievements__control-mark {
+  border-color: #283645;
+}
+
+.form-achievements__input:active + .form-achievements__control-mark {
+  border-color: #d22856;
+}
+
+.form-achievements__control-mark:hover {
+  border-color: #283645;
+}
+
+.form-achievements__control-mark:active {
+  border-color: #d22856;
+}

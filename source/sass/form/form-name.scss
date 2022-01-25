@@ -45,6 +45,14 @@
   border: 2px solid #e5e5e5;
   border-radius: 1px;
 
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:not(:placeholder-shown) {
+    border-color: #d22856;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-grow: 1;

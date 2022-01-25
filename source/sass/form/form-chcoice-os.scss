@@ -101,3 +101,19 @@
   top: 11px;
   left: 11px;
 }
+
+.form-chcoice-os__input:hover ~ .form-chcoice-os__control-mark {
+  border-color: #283645;
+}
+
+.form-chcoice-os__input:active + .form-chcoice-os__control-mark {
+  border-color: #d22856;
+}
+
+.form-chcoice-os__control-mark:hover {
+  border-color: #283645;
+}
+
+.form-chcoice-os__control-mark:active {
+  border-color: #d22856;
+}

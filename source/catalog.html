@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico" sizes="32x32">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png" sizes="180x180">
-    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -49,23 +46,23 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link">
+              <a class="navigation__link" href="index.html">
                 главная
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active-catalog">
+              <a class="navigation__link" href="catalog.html">
                 Фотографии
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link">
+              <a class="navigation__link" href="form.html">
                 конкурс
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link">
-                html academy
+              <a class="navigation__link" href="https://htmlacademy.ru">
+                HTML academy
               </a>
             </li>
           </ul>
@@ -82,9 +79,6 @@
       <section class="photo">
         <section class="photo__day-photo">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/WepP/panorama-desktop-no-retina.webp 1x, img/WepP/panorama-desktop-retina.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/WepP/panorama-tablet-no-retina.webp 1x, img/WepP/panorama-tablet-retina.webp 2x">
-            <source type="image/webp" srcset="img/WepP/panorama-mobile-no-retina.webp 1x, img/WepP/panorama-mobile-retina.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/no-retina/desktop/catalog/panorama-desktop-no-retina.jpg 1x, img/retina/desktop/catalog/panorama-desktop-retina.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/no-retina/tablet/catalog/panorama-tablet-no-retina.jpg 1x, img/retina/tablet/catalog/panorama-tablet-retina.jpg 2x">
             <img class="photo__image photo__image--day-photo" src="img/no-retina/mobile/catalog/panorama-mobile-no-retina.jpg" srcset="img/retina/mobile/catalog/panorama-mobile-retina.jpg 2x" width="320" height="137" alt="Фото дня.">
@@ -256,6 +250,7 @@
                       <span class="visually-hidden">Изменить настройку</span>
                     </button>
                   </div>
+                </div>
               </li>
               <li class="photo-post__item">
                 <button class="photo-post__button-settings photo-post__button-settings--fill" type="button">
@@ -264,7 +259,7 @@
                     <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z" fill="#283645"/>
                     <path d="M48 40H0V43H48V40Z" fill="#283645"/>
                     </g>
-                    </svg>
+                  </svg>
                 </button>
                 <div class="range range--for-fill">
                   <div class="range__scale">
@@ -272,6 +267,7 @@
                       <span class="visually-hidden">Изменить настройку</span>
                     </button>
                   </div>
+                </div>
               </li>
               <li class="photo-post__item">
                 <button class="photo-post__button-settings photo-post__button-settings--contrast" type="button">
@@ -280,7 +276,7 @@
                     <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" fill="#283645"/>
                     <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" fill="#283645"/>
                     </g>
-                    </svg>
+                  </svg>
                 </button>
                 <div class="range range--for-contrast">
                   <div class="range__scale">
@@ -288,6 +284,7 @@
                       <span class="visually-hidden">Изменить настройку</span>
                     </button>
                   </div>
+                </div>
               </li>
             </ul>
             <div class="range range--for-all">
@@ -298,8 +295,8 @@
               </div>
             </div>
             <div class="wrapper wrapper--for-buttons">
-              <button class="photo-post__button" type="submit">Запостить</button>
-              <button class="photo-post__button photo-post__button--disabled" type="button" disabled>Отмена</button>
+              <button class="photo-post__button-active" type="submit">Запостить</button>
+              <button class="photo-post__button-disabled" type="button">Отмена</button>
             </div>
           </form>
         </section>
@@ -360,6 +357,6 @@
         </article>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

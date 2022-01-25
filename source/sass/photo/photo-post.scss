@@ -14,7 +14,7 @@
   }
 }
 
-.photo-post__button {
+.photo-post__button-active {
   font-weight: bold;
   font-size: 18px;
   line-height: 13px;
@@ -25,22 +25,16 @@
   width: 280px;
   padding: 18px 90px;
   display: inline-block;
+  margin-bottom: 12px;
 
-  &--disabled {
-    border-color: rgba(40, 54, 69, 0.1);
-    color: rgba(40, 54, 69, 0.1);
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
   }
 
-  &:first-of-type {
-    margin-bottom: 12px;
-
-    @media (min-width: $desktop-width) {
-      margin-right: 44px;
-    }
-  }
-
-  &:last-child {
-    margin-bottom: 35px;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d22856;
   }
 
   @media (min-width: $tablet-width) {
@@ -51,10 +45,43 @@
     width: 183px;
     padding: 21px 42px;
     height: 55px;
+    margin-bottom: 41px;
+    margin-right: 44px;
+  }
+}
 
-    &:first-of-type {
-      margin-bottom: 41px;
-    }
+.photo-post__button-disabled {
+  box-sizing: border-box;
+  border-radius: 29px;
+  width: 280px;
+  padding: 18px 90px;
+  display: inline-block;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 13px;
+  margin-bottom: 35px;
+
+  &:hover {
+    border-color: rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    padding: 21px 42px;
+    height: 55px;
   }
 }
 

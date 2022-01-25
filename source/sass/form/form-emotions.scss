@@ -51,13 +51,21 @@
   border: 2px solid #e5e5e5;
   border-radius: 1px;
 
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:not(:placeholder-shown) {
+    border-color: #d22856;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 496px;
     min-height: 189px;
   }
 
   @media (min-width: $desktop-width) {
-     min-width: 816px;
-     min-height: 124px;
+    min-width: 816px;
+    min-height: 124px;
   }
 }

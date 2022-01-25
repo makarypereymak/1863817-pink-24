@@ -33,7 +33,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin())
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -99,7 +99,6 @@ const copy = (done) => {
   done();
 }
 
-
 // Clean
 
 const clean = () => {
@@ -140,7 +139,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
-  optimizeImages,
+ // optimizeImages,
   gulp.parallel(
     styles,
     html,

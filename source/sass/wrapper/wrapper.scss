@@ -10,3 +10,19 @@
     }
   }
 }
+
+.wrapper__for-form-achievements {
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
+}
+
+.wrapper__for-form-chcoice-os {
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
+}
