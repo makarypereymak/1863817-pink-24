@@ -88,8 +88,40 @@
 
 .photo__day-photo {
   margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "панорама дня";
+    width: 140px;
+    min-height: 36px;
+    background-color: #d22856;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 9px;
+    letter-spacing: 1.2px;
+    left: 160px;
+    top: 0;
+    box-sizing: border-box;
+    padding-top: 11px;
+
+    @media (min-width: $tablet-width) {
+      left: 500px;
+      top: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 930px;
+      top: 55px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .photo__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 54px;
 }

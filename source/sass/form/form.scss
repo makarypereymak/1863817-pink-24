@@ -1,6 +1,4 @@
 .form {
-  margin-top: 55px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -11,7 +9,6 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 74px;
     column-gap: 64px;
     padding-left: 130px;
     padding-right: 130px;
@@ -27,7 +24,28 @@
   background-color: #2aab60;
   border: 2px solid #2aab60;
   border-radius: 1px;
-  margin-bottom: 46px;
+  margin-bottom: 37px;
+  width: 276px;
+  height: 59px;
+
+  &:hover {
+    background-color: #1c9b5e;
+    border-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
 }
 
 .form__text-words {
@@ -36,6 +54,19 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #283645;
+}
+
+.form__text-words-more {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #283645;
+  }
 }
 
 .form__text-star {
@@ -53,9 +84,16 @@
     order: 6;
     display: flex;
     justify-content: space-between;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/3;
+  }
+}
+
+.form__text {
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
   }
 }

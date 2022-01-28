@@ -1,7 +1,9 @@
 .tariff {
   background-color: #f2f2f2;
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  overflow-x: visible;
 
   &::before {
     position: absolute;
@@ -64,14 +66,11 @@
 }
 
 .tariff__table {
-  margin-top: 109px;
+  margin-top: 84px;
 
   @media (max-width: $mobile-width-only) {
     border-collapse: collapse;
-    position: absolute;
     top: 0;
-    left: 93%;
-    transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-width) {
@@ -81,12 +80,12 @@
 
 .tariff__toggles-list {
   margin: 0;
-  padding: 0;
+  padding: 33px 0 46px 0;
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding-bottom: 46px;
-  padding-top: 431px;
+  background-color: #f2f2f2;
+
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -114,6 +113,10 @@
   width: 276px;
   height: 94px;
 
+  &:first-child {
+    display: none;
+  }
+
   &:not(:last-child)::before {
     background-color: #f2f2f2;
     position: absolute;
@@ -127,7 +130,7 @@
   &:nth-child(3)::after {
     content: "";
     position: absolute;
-    background-image: url("../img/hit.svg");
+    background-image: url("../img/icons/hit.svg");
     width: 61px;
     height: 61px;
     top: -2px;
@@ -140,6 +143,7 @@
     padding-left: 22px;
 
     &:first-child {
+      display: inline-block;
       background-color: inherit;
       border: none;
     }

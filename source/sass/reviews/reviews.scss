@@ -8,9 +8,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 126px;
+    margin-bottom: 133px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 79px;
+      height: 63px;
+      left: auto;
+      right: auto;
+      top: 72px;
+      background-image: url("../img/icons/quotes.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
+
 
 .reviews__author-name {
   font-weight: bold;
@@ -20,12 +33,14 @@
   display: block;
   font-style: normal;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
+    margin-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+    margin-top: 13px;
   }
 }
 
@@ -49,7 +64,11 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-top: 50px;
+  padding-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 193px;
@@ -62,8 +81,12 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 43px;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -80,6 +103,7 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     margin-top: 0;
+    width: 688px;
   }
 }
 
@@ -116,6 +140,20 @@
   position: relative;
   border: none;
   background-color: #ffffff;
+
+  &:hover::before,
+  &:hover::after {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--prev {
+    margin-right: 896px;
+  }
 
   &--prev::before {
     content: "";

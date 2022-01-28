@@ -9,6 +9,7 @@
   min-height: 237px;
   padding: 102px 74px 0 74px;
   box-sizing: border-box;
+  background-color: #283645;
   background-image: url("../img/no-retina/mobile/index/back-mobile-no-retina.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +25,7 @@
     margin-top: -110px;
     min-height: 440px;
     min-width: 660px;
-    padding-top: 191px;
+    padding-top: 181px;
     font-size: 50px;
     line-height: 68px;
 
@@ -48,20 +49,57 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
-  padding-top: 54px;
-  padding-bottom: 60px;
+  padding-top: 46px;
+  padding-bottom: 51px;
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding-top: 100px;
-    padding-bottom: 85px;
+    padding: 102px 109px 78px 100px;
+    line-height: 23px;
   }
 
   &--after-photo-list {
     padding-top: 49px;
-    padding-bottom: 52px;
+    padding-bottom: 38px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 91px;
+  }
+}
+
+.main-catalog__text br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-catalog__title br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-catalog__text.main-catalog__text--after-photo-list {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 65px;
   }
 }

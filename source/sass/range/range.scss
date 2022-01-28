@@ -44,6 +44,17 @@
       width: 275px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 410px;
+      left: -100px;
+    }
+
+    &--for-contrast::before {
+      display: none;
+    }
+  }
 }
 
 .range__scale {
@@ -54,6 +65,10 @@
 
   @media (min-width: $tablet-width) {
     width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
   }
 }
 
@@ -66,4 +81,8 @@
   box-sizing: border-box;
   width: 14px;
   height: 14px;
+
+  &:active {
+    background-color: #d22856;
+  }
 }

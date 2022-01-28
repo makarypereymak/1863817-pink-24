@@ -13,6 +13,14 @@
   border: 2px solid #e5e5e5;
   border-radius: 1px 0 0 0;
 
+  &:first-child {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 153px;
     height: 45px;
@@ -37,7 +45,7 @@
 }
 
 .filter-yes {
-  background-image: url("../img/yes.svg");
+  background-image: url("../img/icons/yes.svg");
   background-repeat: no-repeat;
   background-position: 228px 19px;
 
@@ -47,7 +55,7 @@
 }
 
 .filter-no {
-  background-image: url("../img/no.svg");
+  background-image: url("../img/icons/no.svg");
   background-repeat: no-repeat;
   background-position: 228px 19px;
 

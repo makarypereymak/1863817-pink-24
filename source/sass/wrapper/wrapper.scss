@@ -2,10 +2,35 @@
   @media (min-width: $desktop-width) {
     &--for-photo-post {
       padding: 0 130px 0 130px;
+      margin-bottom: 56px;
     }
 
     &--for-buttons {
       display: flex;
     }
   }
+}
+
+.wrapper__for-form-achievements {
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
+}
+
+.wrapper__for-form-chcoice-os {
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
+}
+
+.wrapper--for-index {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  position: relative;
+  z-index: -3;
 }
