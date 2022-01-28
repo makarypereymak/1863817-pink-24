@@ -50,6 +50,7 @@
   min-height: 197px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+  padding: 22px 20px;
 
   &:hover {
     border-color: #283645;
@@ -57,6 +58,10 @@
 
   &:not(:placeholder-shown) {
     border-color: #d22856;
+  }
+
+  &:focus-visible {
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {

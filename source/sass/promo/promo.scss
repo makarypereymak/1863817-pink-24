@@ -1,9 +1,11 @@
 .promo {
   position: relative;
   background-image: url("../img/no-retina/mobile/index/back-mobile-no-retina.jpg");
+  background-color: #283645;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -66px;
+  box-sizing: border-box;
+  margin: -66px auto 0 auto;
 
   &::after {
     content: "";
@@ -13,7 +15,7 @@
     position: absolute;
     width: 111px;
     height: 197px;
-    left: 104px;
+    right: 104px;
     bottom: 56px;
   }
 
@@ -25,7 +27,7 @@
     position: absolute;
     width: 320px;
     height: 286px;
-    left: 0;
+    right: 0;
     bottom: 0;
     z-index: 1;
   }
@@ -56,7 +58,7 @@
       background-size: 195px 346px;
       width: 195px;
       height: 346px;
-      left: 371px;
+      right: 94px;
       bottom: 146px;
     }
 
@@ -91,7 +93,7 @@
       background-size: 230px 408px;
       width: 230px;
       height: 408px;
-      left: 720px;
+      left: 719px;
       bottom: 172px;
     }
 
@@ -100,8 +102,7 @@
       background-size: 1050px 645px;
       width: 1050px;
       height: 645px;
-      left: auto;
-      right: 0;
+      left: 150px;
     }
 
     @media (min-resolution: 2dppx) {
@@ -139,6 +140,7 @@
     font-size: 50px;
     line-height: 68px;
     justify-self: left;
+    padding-left: 30px;
   }
 }
 

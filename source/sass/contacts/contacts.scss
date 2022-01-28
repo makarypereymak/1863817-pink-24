@@ -4,6 +4,11 @@
   line-height: 13px;
   color: #283645;
   margin-bottom: 11px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    display: block;
+  }
 }
 
 .contacts__link {

@@ -3,6 +3,8 @@
 var navMain = document.querySelector('.navigation');
 var navToggle = document.querySelector('.navigation__toggle');
 
+  navMain.classList.remove('navigation--no-js');
+
   navToggle.addEventListener('click', function() {
       if (navMain.classList.contains('navigation--closed')) {
         navMain.classList.remove('navigation--closed');
@@ -13,10 +15,10 @@ var navToggle = document.querySelector('.navigation__toggle');
       }
   });
 
-// Для таблицы
+// // Для таблицы
 
-let sliderToggle = document.querySelectorAll('.slider__toggle');
+// let sliderToggle = document.querySelectorAll('.slider__toggle');
 
-sliderToggle.addEventListener('click', function() {
-  sliderToggle.classList.add('slider__toggle--current');
-});
+// sliderToggle.addEventListener('click', function() {
+//   sliderToggle.classList.add('slider__toggle--current');
+// });

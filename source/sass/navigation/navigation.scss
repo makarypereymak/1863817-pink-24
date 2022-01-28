@@ -37,7 +37,8 @@
   }
 }
 
-.navigation--opened .navigation__toggle {
+.navigation--opened .navigation__toggle,
+.navigation--no-js .navigation__toggle {
   width: 23px;
   height: 23px;
   padding: 0;
@@ -104,13 +105,13 @@
   }
 }
 
-.navigation--opened .navigation__list {
+.navigation--opened .navigation__list,
+.navigation--no-js .navigation__list {
   display: block;
 }
 
 .navigation__link {
   position: relative;
-  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -166,7 +167,8 @@
   }
 }
 
-.navigation--opened::before {
+.navigation--opened::before,
+.navigation--no-js::before {
   content: "";
   width: 100%;
   min-height: 69px;

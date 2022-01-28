@@ -3,7 +3,7 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 60px;
   }
 }
 
@@ -40,6 +40,10 @@
 
   &--text {
     fill: #283645;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -137,6 +141,7 @@
   border: none;
   margin-bottom: 29px;
   height: 200px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     height: 374px;
@@ -145,5 +150,13 @@
   @media (min-width: $desktop-width) {
     height: 502px;
     margin-bottom: 70px;
+  }
+}
+
+.page-footer__desktop-logo {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

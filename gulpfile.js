@@ -12,6 +12,9 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import path from 'path';
+import svgmin from 'gulp-svgmin';
+import svgSprite from 'gulp-svg-sprite';
 
 // Styles
 
@@ -62,7 +65,7 @@ const copyImages = () => {
 // WebP
 
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}'])
     .pipe(squoosh({
       webp: {}
     }))
@@ -72,12 +75,12 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  gulp.src(['source/img/icons/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/icons'));
 
 const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
+  return gulp.src('source/img/for-sprite/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
@@ -91,7 +94,7 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
-    'source/*.ico',
+    'source/img/favicons/*.{png,svg}',
   ], {
     base: 'source'
   })
@@ -139,7 +142,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
- // optimizeImages,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,

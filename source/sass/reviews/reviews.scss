@@ -8,9 +8,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 126px;
+    margin-bottom: 133px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 79px;
+      height: 63px;
+      left: auto;
+      right: auto;
+      top: 72px;
+      background-image: url("../img/icons/quotes.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
+
 
 .reviews__author-name {
   font-weight: bold;

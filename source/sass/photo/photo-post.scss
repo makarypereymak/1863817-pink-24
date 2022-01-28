@@ -70,7 +70,7 @@
 
   &:active {
     background-color: rgba(40, 54, 69, 0.3);
-    border: 3px solid rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0);
     color: rgba(255, 255, 255, 0.3);
   }
 
@@ -199,6 +199,18 @@
 }
 
 .photo-post__logo {
+  &--crop {
+    fill: #d22856;
+  }
+
+  &--fill {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+
+  &--contrast {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     &--crop {
       width: 22px;
@@ -208,11 +220,13 @@
     &--fill {
       width: 24px;
       height: 22px;
+      fill: #d22856;
     }
 
     &--contrast {
       width: 16px;
       height: 16px;
+      fill: #d22856;
     }
   }
 
@@ -231,5 +245,17 @@
       width: 32px;
       height: 32px;
     }
+  }
+}
+
+.photo-post__button-settings--disabled:hover .photo-post__logo {
+  @media (max-width: $mobile-width-only) {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+}
+
+.photo-post__button-settings--disabled:active .photo-post__logo {
+  @media (max-width: $mobile-width-only) {
+    fill: #d22856;
   }
 }

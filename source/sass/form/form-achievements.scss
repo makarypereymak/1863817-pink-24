@@ -41,6 +41,10 @@
 }
 
 .form-achievements__label {
+  display: flex;
+}
+
+.form-achievements__text {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
