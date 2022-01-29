@@ -128,12 +128,18 @@
   height: 367px;
   position: relative;
   padding-top: 95px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     font-size: 40px;
     line-height: 48px;
     padding-top: 212px;
+    // padding-left: 0;
+    // padding-right: 0;
+    width: 277px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,7 +150,7 @@
   }
 }
 
-.promo__text br {
+.promo__text br:first-child {
   display: none;
 
   @media (min-width: $tablet-width) {
