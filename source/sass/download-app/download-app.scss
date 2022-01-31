@@ -2,8 +2,6 @@
   background-color: #1d2631;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     position: absolute;
     top: 349px;
     background: inherit;
@@ -91,8 +89,3 @@
   margin-right: 35px;
 }
 
-.download-app__wrapper {
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-  }
-}
