@@ -1,15 +1,21 @@
 .page-header {
-  position: relative;
-  z-index: 2;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  position: relative;
+}
+
+.page-header__wrapper {
   padding-top: 17px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 19px;
+  box-sizing: border-box;
   padding-right: 20px;
   padding-left: 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 660px;
     padding-top: 27px;
     padding-bottom: 43px;
     min-height: 110px;
@@ -17,6 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1200px;
     padding-left: 130px;
     padding-right: 130px;
     align-items: center;
@@ -61,6 +68,8 @@
 
 .page-header__link {
   z-index: 2;
+  display: block;
+  margin-right: 100px;
 
   &:hover .page-header__logo {
     fill: #d22856;
@@ -70,3 +79,4 @@
     fill: rgba(255, 255, 255, 0.3);
   }
 }
+

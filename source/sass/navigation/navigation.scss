@@ -96,7 +96,11 @@
   position: absolute;
   left: 0;
   z-index: 2;
-  margin-top: 20px;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 54px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -108,6 +112,10 @@
 .navigation--opened .navigation__list,
 .navigation--no-js .navigation__list {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .navigation__link {
@@ -180,5 +188,10 @@
 
   @media (min-width: $tablet-width) {
     min-height: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-color: inherit;
   }
 }

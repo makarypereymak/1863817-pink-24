@@ -1,17 +1,11 @@
 .download-app {
-  background-color: #1d2631;
-
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 349px;
-    background: inherit;
+    grid-row: 2/3;
     z-index: 3;
   }
 
   @media (min-width: $desktop-width) {
-    top: 449px;
-    display: block;
-    padding-left: 130px;
+    justify-self: baseline;
   }
 }
 
@@ -40,6 +34,7 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     margin-left: 21px;
+    margin-top: 0;
     padding: 15px 39px;
   }
 
@@ -49,6 +44,7 @@
 }
 
 .download-app__info-text {
+  width: 280px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -60,10 +56,7 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     font-size: 18px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 47px 0 0 0;
+    margin: 49px 0 0 0;
   }
 }
 

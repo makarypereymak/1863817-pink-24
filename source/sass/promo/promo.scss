@@ -1,11 +1,7 @@
 .promo {
   position: relative;
-  background-image: url("../img/no-retina/mobile/index/back-mobile-no-retina.jpg");
-  background-color: #283645;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  margin: -66px auto 0 auto;
+  width: 320px;
+  margin: 0 auto;
 
   &::after {
     content: "";
@@ -16,7 +12,7 @@
     width: 111px;
     height: 197px;
     right: 104px;
-    bottom: 56px;
+    bottom: 333px;
   }
 
   &::before {
@@ -28,13 +24,11 @@
     width: 320px;
     height: 286px;
     right: 0;
-    bottom: 0;
+    bottom: 276px;
     z-index: 1;
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/retina/mobile/index/back-mobile-retina.jpg");
-
     &::after {
       background-image: url("../img/retina/mobile/index/screen-nav-mobile-retina.jpg");
     }
@@ -45,13 +39,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/no-retina/tablet/index/back-tablet-no-retina.jpg");
-    background-size: cover;
-    margin-top: -110px;
-    min-height: 729px;
+    width: 660px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 52% 48%;
     justify-items: center;
+    margin-top: -110px;
+    min-height: 729px;
 
     &::after {
       background-image: url("../img/no-retina/tablet/index/screen-nav-tablet-no-retina.jpg");
@@ -67,11 +61,10 @@
       background-size: 660px 545px;
       width: 660px;
       height: 545px;
+      bottom: 0;
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/retina/tablet/index/back-tablet-retina.jpg");
-
       &::after {
         background-image: url("../img/retina/tablet/index/screen-nav-tablet-retina.jpg");
       }
@@ -83,8 +76,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/no-retina/desktop/index/back-desktop-no-retina.jpg");
-    background-size: cover;
+    width: 1200px;
     min-height: 853px;
     padding-left: 130px;
 
@@ -106,8 +98,6 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/retina/desktop/index/back-desktop-retina.jpg");
-
       &::after {
         background-image: url("../img/retina/desktop/index/screen-nav-desktop-retina.jpg");
       }
@@ -127,7 +117,7 @@
   display: block;
   height: 367px;
   position: relative;
-  padding-top: 95px;
+  padding-top: 103px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -135,9 +125,7 @@
     grid-column: 1/2;
     font-size: 40px;
     line-height: 48px;
-    padding-top: 212px;
-    // padding-left: 0;
-    // padding-right: 0;
+    padding-top: 203px;
     width: 277px;
     box-sizing: border-box;
   }

@@ -122,6 +122,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     padding-left: 130px;
     padding-right: 130px;
@@ -254,7 +255,6 @@
     top: -307px;
     width: 186px;
     height: 382px;
-    left: 60px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/retina/desktop/index/screen-3-desktop-retina.jpg"), url("../img/retina/desktop/index/phone-gold-desktop-retina.png");
