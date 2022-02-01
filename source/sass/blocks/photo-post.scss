@@ -196,6 +196,12 @@
 
 .photo-post__image {
   margin-bottom: 42px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .photo-post__logo {
@@ -254,7 +260,8 @@
   }
 }
 
-.photo-post__button-settings--disabled:active .photo-post__logo {
+.photo-post__button-settings--disabled:active .photo-post__logo,
+.photo-post__button-settings--disabled:focus .photo-post__logo {
   @media (max-width: $mobile-width-only) {
     fill: #d22856;
   }

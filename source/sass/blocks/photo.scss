@@ -62,13 +62,6 @@
       height: 506px;
     }
   }
-
-  &--filter {
-    @media (min-width: $tablet-width) {
-      width: 300px;
-      height: 400px;
-    }
-  }
 }
 
 .photo__image.photo__image--day-photo {

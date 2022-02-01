@@ -29,3 +29,21 @@
     opacity: 0.1;
   }
 }
+
+.slider--after-tariff {
+  margin: 0;
+  padding: 33px 0 46px 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+    padding-top: 45px;
+  }
+}
+
+.slider__item:not(:last-child) {
+  margin-right: 13px;
+}

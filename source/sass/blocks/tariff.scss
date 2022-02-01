@@ -78,21 +78,6 @@
   }
 }
 
-.tariff__toggles-list {
-  margin: 0;
-  padding: 33px 0 46px 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  background-color: #f2f2f2;
-
-
-  @media (min-width: $tablet-width) {
-    display: none;
-    padding-top: 45px;
-  }
-}
-
 .tariff__price {
   display: block;
   font-weight: 300;

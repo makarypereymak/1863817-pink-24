@@ -20,14 +20,14 @@
     "gulp-terser": "2.1.0",
     "path": "^0.12.7",
     "postcss": "8.3.11",
-    "postcss-csso": "5.0.1",
-    "stylelint": "14.0.1",
-    "stylelint-config-htmlacademy": "^0.1.11",
+    "postcss-csso": "^6.0.0",
+    "stylelint": "13.13.1",
+    "stylelint-config-htmlacademy": "0.1.11",
     "svgmin": "^0.1.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"src/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp"
@@ -45,10 +45,13 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "16.13.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "postcss-scss": "^4.0.3"
+  }
 }

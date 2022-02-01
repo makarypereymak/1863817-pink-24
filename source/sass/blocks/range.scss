@@ -82,7 +82,8 @@
   width: 14px;
   height: 14px;
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: #d22856;
   }
 }
