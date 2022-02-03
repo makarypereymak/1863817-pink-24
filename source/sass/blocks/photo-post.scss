@@ -98,7 +98,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 100px;
+    margin: 0 0 100px 104px;
   }
 }
 
@@ -195,7 +195,7 @@
 }
 
 .photo-post__image {
-  margin-bottom: 42px;
+  margin: 0 auto 42px auto;
   display: block;
 
   @media (min-width: $tablet-width) {

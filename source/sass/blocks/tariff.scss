@@ -1,9 +1,5 @@
 .tariff {
-  background-color: #f2f2f2;
   position: relative;
-  display: flex;
-  justify-content: center;
-  overflow-x: visible;
 
   &::before {
     position: absolute;
@@ -16,11 +12,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 54px;
-    padding-bottom: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-
     &::before {
       min-height: 42px;
       top: -41px;
@@ -32,7 +23,24 @@
       min-height: 100px;
       top: -99px;
     }
+  }
+}
 
+.tariff__wrapper {
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 60px;
     padding-bottom: 98px;
     padding-left: 130px;
